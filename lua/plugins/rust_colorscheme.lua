@@ -22,7 +22,9 @@ return {
         vim.api.nvim_set_hl(0, "@lsp.type.enumMember.rust", { fg = "#a06fc8", bold = true })
 
         -- string
-        vim.api.nvim_set_hl(0, "@string.rust", { fg = "#28ff80" })
+        --[[ vim.api.nvim_set_hl(0, "@string.rust", { fg = "#28ff80" }) ]]
+        vim.api.nvim_set_hl(0, "@lsp.type.string.rust", { fg = "#96ffc8" })
+        vim.api.nvim_set_hl(0, "@lsp.type.formatSpecifier.rust", { fg = "#00ff80", bold = true })
 
         -- keyword
         vim.api.nvim_set_hl(0, "@keyword.rust", { fg = "#f99818", bold = true })
@@ -37,10 +39,10 @@ return {
         vim.api.nvim_set_hl(0, "@type.builtin.rust", { fg = "#f99818", bold = true })
 
         -- function
-        vim.api.nvim_set_hl(0, "@lsp.type.method.rust", { fg = "#c8ff80" })
-        vim.api.nvim_set_hl(0, "@lsp.type.function.rust", { fg = "#c8ff80" })
-        vim.api.nvim_set_hl(0, "@function.rust", { fg = "#c8ff80" })
-        vim.api.nvim_set_hl(0, "@function.call.rust", { fg = "#c8ff80" })
+        vim.api.nvim_set_hl(0, "@lsp.type.method.rust", { fg = "#ffff96" })
+        vim.api.nvim_set_hl(0, "@lsp.type.function.rust", { fg = "#ffff96" })
+        vim.api.nvim_set_hl(0, "@function.rust", { fg = "#ffff96" })
+        vim.api.nvim_set_hl(0, "@function.call.rust", { fg = "#ffff96" })
 
         -- macro
         vim.api.nvim_set_hl(0, "@lsp.type.macro.rust", { fg = "#40bcde", bold = true })
