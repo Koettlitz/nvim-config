@@ -1,7 +1,7 @@
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = 4
 vim.opt.cursorline = true
 vim.g.mapleader = " "
 require('keymaps')
