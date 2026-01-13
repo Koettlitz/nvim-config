@@ -1,3 +1,6 @@
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, {
+  desc = "Go to defintion"
+})
 vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function()
     for _, client in ipairs(vim.lsp.get_active_clients({ bufnr = 0 })) do
