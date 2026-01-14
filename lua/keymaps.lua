@@ -5,3 +5,5 @@ vim.keymap.set('n', '<ESC>', function()
   end
   return vim.api.nvim_replace_termcodes('<ESC>', true, false, true)
 end, { expr = true, noremap = true, silent = true })
+vim.keymap.set('n', '<C-o>', '<C-o>zz', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-i>', '<C-i>zz', { noremap = true, silent = true })
