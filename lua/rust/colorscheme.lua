@@ -52,12 +52,13 @@ function M.apply()
     -- #[attribute]
     vim.api.nvim_set_hl(0, "@lsp.type.decorator.rust", { fg = "#bcde40" })
     vim.api.nvim_set_hl(0, "@lsp.type.attributeBracket.rust", { fg = "#bcde40" })
+    vim.api.nvim_set_hl(0, "@lsp.mod.attribute.rust", { fg = "#bcde40" })
 
     -- generics
     vim.api.nvim_set_hl(0, "@lsp.type.typeParameter.rust", { fg = "#9680b4" })
 
     -- type alias
-    vim.api.nvim_set_hl(0, "@lsp.type.typeAlias.rust", { fg = "#9680b4" })
+    vim.api.nvim_set_hl(0, "@lsp.type.typeAlias.rust", { fg = "#9680b4" , bold = true })
 
     -- lifetime
     vim.api.nvim_set_hl(0, "@lsp.type.lifetime.rust", { fg = "#40dede" })
