@@ -5,6 +5,9 @@ return {
     config = function()
         require("nvim-surround").setup({
             surrounds = {
+                ["V"] = {
+                    add = { "Vec<", ">" },
+                },
                 ["O"] = {
                     add = { "Option<", ">" },
                 },

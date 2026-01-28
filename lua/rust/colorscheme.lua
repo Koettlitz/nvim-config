@@ -29,6 +29,7 @@ function M.apply()
     vim.api.nvim_set_hl(0, "@lsp.type.selfKeyword.rust", { fg = "#f99818", bold = true })
     vim.api.nvim_set_hl(0, "@lsp.type.selfTypeKeyword.rust", { fg = "#f99818", bold = true })
     vim.api.nvim_set_hl(0, "@type.builtin.rust", { fg = "#f99818", bold = true })
+    vim.api.nvim_set_hl(0, "@boolean.rust", { fg = "#f99818", bold = true })
 
     -- function
     vim.api.nvim_set_hl(0, "@lsp.type.method.rust", { fg = "#ffff96" })
@@ -55,7 +56,7 @@ function M.apply()
     vim.api.nvim_set_hl(0, "@lsp.mod.attribute.rust", { fg = "#bcde40" })
 
     -- generics
-    vim.api.nvim_set_hl(0, "@lsp.type.typeParameter.rust", { fg = "#9680b4" })
+    vim.api.nvim_set_hl(0, "@lsp.type.typeParameter.rust", { fg = "#9680b4", bold = true })
 
     -- type alias
     vim.api.nvim_set_hl(0, "@lsp.type.typeAlias.rust", { fg = "#9680b4" , bold = true })
