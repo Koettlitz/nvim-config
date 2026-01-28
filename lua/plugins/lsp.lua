@@ -1,13 +1,3 @@
-vim.keymap.set("n", "gd", vim.lsp.buf.definition)
---[[ vim.keymap.set("n", "gd", function() ]]
---[[     vim.lsp.buf.definition() ]]
---[[     vim.defer_fn(function () ]]
---[[         local keys = vim.api.nvim_replace_termcodes("8<C-e>", true, false, true) ]]
---[[         vim.api.nvim_feedkeys(keys, 'n', false) ]]
---[[     end, 64) ]]
---[[ end, { ]]
---[[   desc = "Go to defintion" ]]
---[[ }) ]]
 vim.api.nvim_create_autocmd("BufWritePre", {
     callback = function()
         for _, client in ipairs(vim.lsp.get_active_clients({ bufnr = 0 })) do
