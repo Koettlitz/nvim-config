@@ -13,4 +13,3 @@ vim.diagnostic.config ({
 })
 require('keymaps')
 require("config.lazy")
-require('rust.colorscheme').apply()
