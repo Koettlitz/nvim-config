@@ -6,4 +6,3 @@ vim.opt.cursorline = true
 vim.g.mapleader = " "
 require('keymaps')
 require("config.lazy")
-require('rust.colorscheme').apply()
