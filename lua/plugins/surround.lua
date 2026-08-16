@@ -11,6 +11,9 @@ return {
                 ["O"] = {
                     add = { "Option<", ">" },
                 },
+                ["R"] = {
+                    add = { "Result<", ">" },
+                },
                 ["s"] = {
                     add = { "Some(", ")" },
                 },

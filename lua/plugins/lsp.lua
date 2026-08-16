@@ -19,9 +19,18 @@ return {
                 filetypes = { "rust" },
                 root_markers = { "Cargo.toml", ".git" },
                 capabilities = capabilities,
+                settings = {
+                    ["rust_analyzer"] = {
+                        cargo = {
+                            buildScripts = {
+                                enable = true,
+                            },
+                        },
+                    },
+                },
             })
-
             vim.lsp.enable("rust_analyzer")
+
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(event)
                     local opts = { buffer = event.buf }
