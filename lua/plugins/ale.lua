@@ -10,11 +10,16 @@ return {
   'dense-analysis/ale',
   config = function()
     vim.g.ale_linters = {
-        rust = { 'cargo', 'clippy' },
-        lua = { 'lua_language_server' }
+      rust = {},
+      lua = { 'lua_language_server' },
     }
-    vim.g.ale_fixers = {
-      rust = { 'rustfmt' }
+
+    vim.g.ale_rust_analyzer_config = {
+      ['rust-analyzer'] = {
+        check = {
+          command = 'clippy',
+        },
+      },
     }
   end
 }

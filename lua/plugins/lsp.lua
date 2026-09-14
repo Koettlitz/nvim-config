@@ -26,6 +26,9 @@ return {
                                 enable = true,
                             },
                         },
+                        check = {
+                            command = "clippy",
+                        },
                     },
                 },
             })
